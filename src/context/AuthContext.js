@@ -47,7 +47,6 @@ export function AuthProvider({ children }) {
 		if (tokens) {
 			const interval = setInterval(() => {
 				refreshTokens(tokens.refresh)
-				console.log('refreshed')
 			}, 4 * 60 * 1000)
 			return () => clearInterval(interval)
 		}

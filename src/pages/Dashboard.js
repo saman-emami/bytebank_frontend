@@ -26,7 +26,6 @@ function Dashboard({ isSidebarOpen }) {
 		if (response.status === 401) logout()
 
 		if (response.status === 200) {
-			console.log(data)
 			setDatabases(data)
 		}
 	}

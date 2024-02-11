@@ -55,7 +55,6 @@ function SignupForm() {
 		if (response.status === 200) {
 			setTokens(data)
 			localStorage.setItem('tokens', JSON.stringify(data))
-			console.log(data)
 		} else if (response.status === 400 && data.detail === 'user already exists') {
 			setErrors({ username: 'Username is already taken' })
 		}
