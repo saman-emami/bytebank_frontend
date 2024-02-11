@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.form-container {
+	position: relative;
+	top: 64px;
+	max-width: 440px;
+	margin: auto;
+	height: max(calc(100vh - 64px), 500px);
+	display: flex;
+	align-items: center;
+	padding-inline: 20px;
+}
+
+.form {
+	background-color: #111111;
+	padding: 30px;
+	border: 1px solid #ffffff10;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	animation: card-in 0.2s;
+}
+
+.form label,
+.form > div {
+	color: #a7a7a7;
+	margin-bottom: 5px;
+}
+
+.form label:not(.form label:first-of-type),
+.form > div {
+	margin-top: 15px;
+}
+
+.form textarea {
+	resize: vertical;
+	width: 100%;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 16px;
+	background-color: rgb(49, 49, 49);
+	border: none;
+	border-radius: 5px;
+}
+
+.form .form-button-container {
+	margin-top: auto;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.form textarea[name='default_JSON_field'] {
+	color: #fff893;
+	font-family: 'Fira Code', monospace;
+}
+
+.form input,
+.form select {
+	padding: 10px;
+	color: #ffffff;
+	font-size: 16px;
+	background-color: #1a1a1a;
+	border: none;
+	border-radius: 5px;
+}
+
+.form select {
+	cursor: pointer;
+}
+
+.form input[type='checkbox'] {
+	margin-left: 10px;
+	filter: grayscale(100%) invert(100%) brightness(200%);
+}
+
+.form input[type='checkbox']:hover {
+	cursor: pointer;
+}
+
+.form input:focus {
+	outline: 2px solid #bdbdbd;
+	padding: 10px 15px;
+	transition: padding 0.2s;
+}
+
+.form-button-container button {
+	display: flex;
+	align-items: center;
+	align-self: flex-end;
+	justify-self: center;
+	margin-top: 20px;
+	padding: 10px 15px;
+	background-color: #fff893;
+	box-shadow: 0 0 50px #fff89331;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.default_boolean_field_value {
+	margin-left: 5px;
+	color: #fff893;
+	font-family: 'Fira Code', monospace;
+	font-size: 16px;
+}
+
+.form-button-container button:hover {
+	box-shadow: 0 0 30px #fff89365;
+	transform: scale(1.05);
+	transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.form .delete-field {
+	background-color: #ff9f9300;
+	fill: #ff9f93;
+	box-shadow: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+}
+
+.form .delete-field svg {
+	position: absolute;
+}
+
+.form .delete-field:hover {
+	box-shadow: none;
+	transform: scale(1.2);
+}
+
+.field-error {
+	color: rgb(255, 162, 162);
+	margin-top: 5px;
+	animation: error-in 0.2s;
+}
+
+.auth-form-message {
+	color: #a1a1a1;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.auth-form-message a {
+	color: #fff893;
+}
+
+.form-title {
+	color: #d6d6d6;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+.delete-url {
+	margin-left: 10px;
+	margin-top: 7px;
+	background: transparent;
+	fill: #ff9f93;
+	border: none;
+	cursor: pointer;
+}
+
+.origin-url .text-input {
+	width: calc(100% - 20px);
+	margin-left: 5px;
+}
+.origin-url {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-block: 15px;
+}
+
+.origin-url svg {
+	width: 22px;
+	height: 22px;
+}
+
+#table-name {
+	margin-top: 30px;
+}
+
+.allowed-origins p {
+	margin-top: 10px;
+	font-size: 15px;
+}
+.allowed-origins {
+	border: 1px solid #ffffff10;
+	padding: 15px;
+	border-radius: 3px;
+}
+
+.url-input-container {
+	margin: 0px;
+	flex-grow: 1;
+}
+
+#add-url-button {
+	background-color: transparent;
+	color: #fff893;
+	box-shadow: none;
+	margin-top: 10px;
+}
+
+#allowed-origins-title {
+	color: #d6d6d6;
+}

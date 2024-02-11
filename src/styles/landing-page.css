@@ -1,0 +1,121 @@
+#landing-page {
+	position: relative;
+	top: 64px;
+}
+
+#first-section,
+#second-section {
+	height: max(700px, calc(100vh - 64px));
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 'text picture';
+}
+
+#third-section {
+	height: max(700px, calc(100vh - 64px));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#third-section h2 {
+	color: white;
+}
+
+#third-section p {
+	color: #c5c5c5;
+}
+
+#landing-page .half-section {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+#first-section .half-section:nth-child(1) {
+	grid-area: text;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-inline: 8vw;
+	gap: 0.5vw;
+}
+
+#first-section .half-section:nth-child(2) {
+	grid-area: picture;
+	display: flex;
+	justify-content: center;
+}
+
+.landing-image {
+	width: calc(80% - 30px);
+	filter: drop-shadow(0 0 200px #fff89342) drop-shadow(0 0 10px #fff89323);
+	border-radius: 5px;
+	animation: fade-in 1s;
+}
+
+.section-title {
+	color: white;
+	font-size: 2.5vw;
+	font-weight: 900;
+}
+
+.landing-paragraph {
+	color: #c5c5c5;
+	font-size: 1.1vw;
+	line-height: 1.6;
+}
+
+.landing-button {
+	text-decoration: none;
+	padding: 0.8vw 0;
+	color: #fff893;
+	font-weight: bold;
+	font-size: 1vw;
+	transition: filter 0.2s;
+}
+
+.landing-button:hover {
+	filter: drop-shadow(0 0 10px #fff893);
+	transition: filter 0.2s;
+}
+
+#second-section .half-section:nth-child(2) {
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-inline: 8vw;
+}
+
+#second-section .half-section:nth-child(1) {
+	justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+	#landing-page section {
+		grid-template-areas:
+			'picture'
+			'text';
+		grid-template-columns: 1fr;
+	}
+
+	.section-title {
+		font-size: 6.5vw;
+	}
+
+	.landing-paragraph {
+		font-size: 3.8vw;
+	}
+
+	.landing-button {
+		font-size: 3.9vw;
+	}
+
+	#first-section,
+	#second-section,
+	#third-section {
+		height: max(calc(100vh - 64px), 150vw);
+	}
+}
