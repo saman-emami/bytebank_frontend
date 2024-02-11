@@ -27,7 +27,10 @@ export function AuthProvider({ children }) {
 		}
 
 		try {
-			const response = await fetch('https://bytebank-db.vercel.app/refresh/', options)
+			const response = await fetch(
+				'https://bytebank-db.vercel.app/token/refresh/',
+				options
+			)
 			const data = await response.json()
 			if (response.status === 200) {
 				setTokens(data)
