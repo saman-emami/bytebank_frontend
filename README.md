@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# ByteBank - Database in a Flash
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to ByteBank, your one-stop solution for creating and managing databases in a flash! This service utilizes the power of React for a dynamic user interface, Django and Django REST Framework for a robust and secure backend, and JWT technology for secure authentication.
+![ByteBank - Database in a Flash](https://github.com/saman-emami/wikiverse_frontend/assets/157804251/242678ec-5cea-48b2-9461-209a92fdd62e)
 
-## Available Scripts
+## Live Demo
+Experience ByteBank in action at:
+https://bytebank-db.netlify.app/
 
-In the project directory, you can run:
+## Key Features
+* __Instant Database Creation__: Get your database up and running within seconds, no complex configurations required.
+* __RESTful API Access__: Manage your databases through a RESTful API for seamless integration with external applications.
+* __CRUD Operations__: Perform create, read, update, and delete operations on your database tables using intuitive API calls.
 
-### `npm start`
+## Backend Technology Stack:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Python
+* Django
+* Django REST Framework
+* PostgreSQL (database)
+## Frontend Technology Stack:
+* JavaScript
+* HTML5
+* CSS3
+* ReactJS
+* Formik (for form handling)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Backend Repository:
+The backend code for ByteBank resides in a separate repository for better maintainability and flexibility. You can find it here: https://github.com/saman-emami/bytebank_backend
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contribution
+While ByteBank is primarily a personal project, I welcome any contributions and feedback. Feel free to fork the repository, suggest improvements, or report any issues you encounter. Feel free to reach out to me via email at: samanemami13@gmail.com
